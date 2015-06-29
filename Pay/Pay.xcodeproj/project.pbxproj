@@ -9,11 +9,12 @@
 /* Begin PBXBuildFile section */
 		04BB60681B418A000098416A /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 04BB60671B418A000098416A /* main.m */; };
 		04BB606B1B418A000098416A /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 04BB606A1B418A000098416A /* AppDelegate.m */; };
-		04BB606E1B418A000098416A /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 04BB606D1B418A000098416A /* ViewController.m */; };
 		04BB60711B418A000098416A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 04BB606F1B418A000098416A /* Main.storyboard */; };
 		04BB60731B418A000098416A /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 04BB60721B418A000098416A /* Images.xcassets */; };
 		04BB60761B418A000098416A /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 04BB60741B418A000098416A /* LaunchScreen.xib */; };
 		04BB60821B418A000098416A /* PayTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 04BB60811B418A000098416A /* PayTests.m */; };
+		04BB608D1B4195450098416A /* PWViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 04BB608C1B4195450098416A /* PWViewController.m */; };
+		04BB60901B41956D0098416A /* MainViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 04BB608F1B41956D0098416A /* MainViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -32,14 +33,16 @@
 		04BB60671B418A000098416A /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		04BB60691B418A000098416A /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		04BB606A1B418A000098416A /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		04BB606C1B418A000098416A /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
-		04BB606D1B418A000098416A /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
 		04BB60701B418A000098416A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		04BB60721B418A000098416A /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		04BB60751B418A000098416A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
 		04BB607B1B418A000098416A /* PayTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PayTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		04BB60801B418A000098416A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		04BB60811B418A000098416A /* PayTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PayTests.m; sourceTree = "<group>"; };
+		04BB608B1B4195450098416A /* PWViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PWViewController.h; sourceTree = "<group>"; };
+		04BB608C1B4195450098416A /* PWViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PWViewController.m; sourceTree = "<group>"; };
+		04BB608E1B41956D0098416A /* MainViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MainViewController.h; sourceTree = "<group>"; };
+		04BB608F1B41956D0098416A /* MainViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MainViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -83,12 +86,14 @@
 			children = (
 				04BB60691B418A000098416A /* AppDelegate.h */,
 				04BB606A1B418A000098416A /* AppDelegate.m */,
-				04BB606C1B418A000098416A /* ViewController.h */,
-				04BB606D1B418A000098416A /* ViewController.m */,
 				04BB606F1B418A000098416A /* Main.storyboard */,
 				04BB60721B418A000098416A /* Images.xcassets */,
 				04BB60741B418A000098416A /* LaunchScreen.xib */,
 				04BB60651B418A000098416A /* Supporting Files */,
+				04BB608B1B4195450098416A /* PWViewController.h */,
+				04BB608C1B4195450098416A /* PWViewController.m */,
+				04BB608E1B41956D0098416A /* MainViewController.h */,
+				04BB608F1B41956D0098416A /* MainViewController.m */,
 			);
 			path = Pay;
 			sourceTree = "<group>";
@@ -219,9 +224,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				04BB606E1B418A000098416A /* ViewController.m in Sources */,
+				04BB608D1B4195450098416A /* PWViewController.m in Sources */,
 				04BB606B1B418A000098416A /* AppDelegate.m in Sources */,
 				04BB60681B418A000098416A /* main.m in Sources */,
+				04BB60901B41956D0098416A /* MainViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -416,6 +422,7 @@
 				04BB60871B418A000098416A /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		04BB60881B418A000098416A /* Build configuration list for PBXNativeTarget "PayTests" */ = {
 			isa = XCConfigurationList;
@@ -424,6 +431,7 @@
 				04BB608A1B418A000098416A /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
